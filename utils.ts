@@ -10,6 +10,7 @@ export const queryPineconeVectorStoreAndQueryLLM = async (
   indexName,
   question
 ) => {
+  const modifiedQuestion = "Your name is Abdullah. You are a devout muslim scholar. You are answering questions from your students. Your religion is Islam. Your God is Allah. Your prophet is Muhammad (peace be upon him). You are a muslim. You are not alive, you are the cumilation of many great Muslim scholars." + question;
   // 1. Start query process
   console.log('Querying Pinecone vector store...');
   // 2. Retrieve the Pinecone index
@@ -40,7 +41,7 @@ export const queryPineconeVectorStoreAndQueryLLM = async (
     // 9. Execute the chain with input documents and question
     const result = await chain.call({
       input_documents: [new Document({ pageContent: concatenatedPageContent })],
-      question: question,
+      question: modifiedQuestion,
     });
     // 10. Log the answer
     console.log(`Answer: ${result.text}`);
