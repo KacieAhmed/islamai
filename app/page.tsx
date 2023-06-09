@@ -53,11 +53,12 @@ export default function Home() {
   
 </div>
 
-      <p>This model is trained on works from: </p>
-      <p> Shaykh (Imam) Abu Hamid Muhammad Al-Ghazali (RA) </p>
-      <p> Hamza Andreas Tzortzis </p>
-      <p> Al-Tahawi </p>
-      <p> Dr. Abu Ameenah Bilal Philips </p>
+      <p>Whitepaper: https://docs.google.com/document/d/1gcflM4p6w42e6KbxmaOddnKedhewJ3GzVTw-_ZjiNK4/edit?usp=sharing </p>
+      <a>Made by:</a><a href="https://www.twitter.com/Haezurath" target="_blank" style={{ textDecoration: 'underline', color: 'blue' }}>Kacie Ahmed</a>
+
+
+
+      
     </main>
   )
 }
